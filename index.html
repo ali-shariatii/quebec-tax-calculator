@@ -1,0 +1,63 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+  <title>Quebec Tax Calculator</title>
+  <meta encoding="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="">
+  <link href="css/style.css" rel="stylesheet" >
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/glyphicon.css" rel="stylesheet">
+  <!---------------------------------------------------------------------------------------------- bootswatch local file -->
+  <link rel="stylesheet" href="vendor/bootswatch/darkly/bootstrap.min.css">
+  <!---------------------------------------------------------------------------------------------- font-awesome local file -->
+  <link rel="stylesheet" href="">
+  <!---------------------------------------------------------------------------------------------- glyphicon local file -->
+  <link rel="stylesheet" href="vendor/glyphicon/css/glyphicon.css">
+</head>
+<body>
+	<header>Quebec Tax Calculator</header>
+	<main>
+		<div class="container">
+			<p>Type your salary and get the total amount of your payable tax</p>
+			<form>
+                <input id="amount" type="number" placeholder="Type the amount here ..." class="form-control"><br>
+				<button type="button" onclick="clickButton()" class="btn btn-light">Calculate Tax</button>
+				<audio id="buttonSoundEffect">
+					<source src="snd/buttonSoundEffect2.mp3" type="audio/mpeg">
+				</audio>
+			</form>
+			<br>
+			<p>Quebec Sales Tax (%9.98): <span type="number" id="qst"></span></p>
+
+			<p>Goods & Services Tax (%5.00): <span type="text" id="gst"></span></p> 
+
+			<p>Total Payable Tax (%14.98): <span type="number" id="total"></span></p>
+		</div>
+	</main>
+	<aside></aside>
+	<article></article>
+	<footer></footer>
+	<!---------------------------------------------------------------------------------------------- jquery 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	-->
+	<!---------------------------------------------------------------------------------------------- latest compiled and minified JavaScript 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	-->
+	<!---------------------------------------------------------------------------------------------- jquery, popper.js, Bootstrap JS 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	-->
+	<!---------------------------------------------------------------------------------------------- bootstrap local files BEGIN FROM THIS LINE -->
+	<!---------------------------------------------------------------------------------------------- jquery local File -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<!---------------------------------------------------------------------------------------------- popper.js local file -->
+	<script src="vendor/popper/popper.min.js"></script>
+	<!---------------------------------------------------------------------------------------------- bootstrap  local file -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!---------------------------------------------------------------------------------------------- bootstrap local files END ON THIS LINE -->
+	<script src="js/main.js"></script>
+</body>
+</html>
